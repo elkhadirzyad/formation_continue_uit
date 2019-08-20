@@ -1,0 +1,48 @@
+
+<style>
+    .lienAnnonceCategorie {
+        font-size: 20px;
+        font-weight: bold;
+        color: #25427c;
+    }
+
+    .lienAnnonceCategorie a:hover,
+    .lienAnnonceCategorie a:visited,
+    .lienAnnonceCategorie a:active {
+        text-decoration: none;
+    }
+</style>
+<div class="area2 col-md-9 ">
+    <span id="scroll"></span>
+    <h2 class="title green" id="titreEvents"><span class="leTitre">DOMAINES DE SPECIALITÉ</span> <a href="{{path('home')}}"
+            style="font-size: 25px; margin-top: -6px; margin-left: 40px;"><span class="fa fa-home"></span></a></h2>
+            <center><img id="loaderAnnonce" src="/img/Front/loader2.gif" style="width: 100px; display: none;"></center>      
+    <div class="row-fix" id="detailAnnonce">
+
+  
+
+
+
+
+
+
+
+        <div style="margin-left: 20px; margin-top: 20px;">
+
+            <div id="list_from_ajax">
+                
+                {% for spts in specialites %}
+                <p class="lienAnnonceCategorie" categorie="#" annonce="#"> <span class="fa fa-graduation-cap"></span>
+                    <a class="domaine" style="text-transform: uppercase;" href="{{ path('specialite_lus_mus',{'id':spts.id})}}"> {{spts.titre}}</a></p>
+
+
+                {% endfor %}
+            </div>
+            
+            
+
+        </div>
+    </div>
+    
+</div>
+

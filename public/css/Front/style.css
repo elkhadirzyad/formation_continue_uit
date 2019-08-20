@@ -1,0 +1,299 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: url(../../img/Front/bg.png) repeat-x;
+
+	font-size: 17px;
+}
+.container-full {
+  margin: 0 auto;
+  width: 100%;
+}
+
+header {
+
+    background: url(../../img/Front/Capture.png) no-repeat center;
+    min-height: 300px;
+    width: 100%;
+	background-size: 100% 300px;
+}
+
+header h1{
+	color: #FFFFFF;
+	font-size: 22px;
+	text-transform: uppercase;
+	margin-top: 5px;
+}
+
+header h2{
+	color: #FFFFFF;
+	font-size: 20px;
+	text-transform: uppercase;
+	margin-top: 30px;
+	margin-bottom: 10px;
+}
+
+header .logo {
+    float: right;
+    margin-right: 20px;
+	margin-top: 0px;
+}
+header .logo img {
+    height: 120px;
+    margin-top: 10px;
+}
+
+.navbar {
+    margin-bottom: 0px;
+
+}
+
+.navbar-inverse {
+    background-color: #31b3aa;
+    border: none;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover {
+    background: #227C76 ;
+}
+
+
+
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
+    background: #31b3aa;
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:focus, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: #1c8a82;
+    color: #fff;
+}
+
+.navbar-fixed-bottom, .navbar-fixed-top {
+    left: 0;
+    position: relative;
+    right: 0;
+    z-index: 500;
+}
+
+@media (max-width:767px) {
+
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
+	color: #fff;
+}
+
+}
+	
+.dropdown-menu > li {
+	padding: 5px 0;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.dropdown-menu > li:last-child { border-bottom: none;  }
+
+.row-fix{
+    margin-left: -15px;
+    margin-right: 0px;
+}
+
+.row-fix [class*="col-"]{
+	 padding-right: 0px;
+}
+
+p{
+	margin: 10px 0;
+}
+
+img.fullwidth{
+	width: 100%;
+	height: auto;
+}
+
+ul.blocks{
+	list-style: none;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0px;
+}
+
+ul.blocks li{
+	margin-bottom: 0px;
+	width: 100%;
+	color: #ffffff;
+}
+
+ul.blocks li a.blue{
+	margin-bottom: 10px;
+	background: #1C59FF;
+}
+
+ul.blocks li a.blue:hover{
+	margin-bottom: 10px;
+	background: #507FFF;
+}
+
+ul.blocks li a{
+	font-size: 18px;
+	display: block;
+	padding: 16px;
+	color: #ffffff;
+}
+
+ul li a:hover{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+ul li a.blue:hover{
+	background: #548cdd;
+}
+
+ul li a.green:hover{
+	background: #5ac6bf;
+}
+
+.title{
+	font-size: 16px;
+	padding: 14px;
+	color: #FFFFFF;
+}
+
+.more {
+    display: block;
+    margin-bottom: 12px;
+}
+.blue{
+	background: #2d78e5;
+}
+
+.green{
+	background: #31b3aa;
+}
+
+a.green-block{
+	color: #FFFFFF;
+	display: block;
+	padding: 20px;
+	margin-top: 20px;
+	font-size: 24px;
+	background: #31b3aa;
+}
+
+a.green-block:hover{
+	text-decoration: none;
+	background: #317F7A;
+}
+
+ul.blocks li a.lightgray{
+	color: #000000;
+	font-size: 15px;
+	background: #f2f6fe;
+}
+
+ul.blocks li a.darkgray{
+	color: #000000;
+	font-size: 15px;
+	background: #e7edf9;
+}
+
+ul.blocks li a.lightgray:hover{
+	background: #e0e8f8;
+}
+
+ul.blocks li a.darkgray:hover{
+	background: #dbe4f7;
+}
+
+.title a{
+    color: #FFFFFF;
+	background:url(../img/tout.png) no-repeat right center; 
+	padding: 0px 22px 0px 0;
+	display: block;
+	float: right;
+	font-size: 16px;
+    text-align: right;
+
+}
+
+.contet{
+	margin-right: -5px;
+}
+
+.gallery  h2{
+	font-size: 17px;
+}
+
+.gallery img{
+	width: 100%;
+	height: auto;
+}
+
+.gallery .thumnail{
+	margin-right: 0px;
+	margin-bottom: 0px;
+	padding: 0 5px 5px 0;
+	float: left;
+	width: 25%;
+}
+
+.clear {clear:both;}
+
+footer{
+	background: #ebeced;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+footer ul{
+	padding-left: 0px;
+	margin-top: 20px;
+}
+
+footer ul li{
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+footer ul li a{
+	color: #717171;
+}
+
+footer ul li a:hover{
+	color: #1A1A1A;
+}
+
+.copyright{
+	background: #00407f;
+	padding: 20px 0;
+	margin-top: 30px;
+}
+
+footer .icon {
+    display: block;
+    float: right;
+    height: 23px;
+    margin-left: 10px;
+	margin-top: 30px;
+    width: 23px;
+}
+footer .icon.facebook {
+    background: rgba(0, 0, 0, 0) url("../img/facebook.png") no-repeat scroll 0 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+footer .icon.facebook:hover {
+    background-position: 0 -23px;
+}
+footer .icon.twitter {
+    background: rgba(0, 0, 0, 0) url("../img/twitter.png") no-repeat scroll 0 0;
+    transition: all 0.3s ease-in-out 0s;
+}
+footer .icon.twitter:hover {
+    background-position: 0 -23px;
+}
+#navbar
+{
+	z-index: -1;
+}

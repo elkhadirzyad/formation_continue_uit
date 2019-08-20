@@ -1,0 +1,231 @@
+.carousel {
+    height: 440px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel a{
+	color: #fff;
+}
+
+.carousel-caption {
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+
+}
+
+.carousel-indicators
+{
+    position: absolute;
+    bottom: 5px;
+}
+
+#myCarousel .carousel-caption, #myCarousel2 .carousel-caption
+{
+    width: 100%;
+    background-color: rgba(0,0,0,0.9);
+}
+
+#myCarousel .carousel-caption h4, #myCarousel2 .carousel-caption h4
+{
+ margin-bottom: 20px;
+}
+
+.carousel .item {
+    background-color: #777;
+    height: 440px;
+}
+.carousel-inner > .item > img {
+    /*height: 440px;*/
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media (max-width: 1200px) {
+
+.carousel {
+    height: 300px;
+}
+.carousel .item {
+    background-color: #777;
+    height: 300px;
+}
+.carousel-inner > .item > img {
+   /* height: 300px;*/
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+@media (max-width: 768px) {
+
+.carousel {
+    height: 250px;
+}
+.carousel .item {
+    background-color: #777;
+    height: 250px;
+}
+.carousel-inner > .item > img {
+    height: 250px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+@media (max-width: 480px) {
+
+.carousel {
+    height: 200px;
+}
+.carousel .item {
+    background-color: #777;
+    height: 200px;
+}
+.carousel-inner > .item > img {
+    height: 200px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+#myCarousel2.carousel {
+    height: 300px;
+}
+
+#myCarousel2.carousel .item {
+    height: 300px;
+}
+
+#myCarousel2 .carousel-inner > .item > img {
+    height: 300px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+@media (min-width: 1200px) {
+
+#myCarousel2.carousel {
+    height: 355px;
+}
+
+#myCarousel2.carousel .item {
+    height: 355px;
+}
+	
+#myCarousel2 .carousel-inner > .item > img {
+    height: 355px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+@media (max-width: 768px) {
+
+#myCarousel2.carousel {
+    height: 320px;
+}
+
+#myCarousel2.carousel .item {
+    height: 320px;
+}
+	
+#myCarousel2 .carousel-inner > .item > img {
+    height: 320px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+@media (max-width: 480px) {
+
+#myCarousel2.carousel {
+    height: 240px;
+}
+
+#myCarousel2.carousel .item {
+    height: 240px;
+}
+	
+#myCarousel2 .carousel-inner > .item > img {
+    height: 240px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+@media (max-width: 320px) {
+
+#myCarousel2.carousel {
+    height: 150px;
+}
+
+#myCarousel2.carousel .item {
+    height: 150px;
+}
+	
+#myCarousel2 .carousel-inner > .item > img {
+    height: 150px;
+    left: 0;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+}
+}
+
+.marketing .col-lg-4 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.marketing h2 {
+    font-weight: normal;
+}
+.marketing .col-lg-4 p {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.featurette-divider {
+    margin: 80px 0;
+}
+.featurette-heading {
+    font-weight: 300;
+    letter-spacing: -1px;
+    line-height: 1;
+}
+@media (min-width: 768px) {
+
+.carousel-caption p {
+    font-size: 21px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+.featurette-heading {
+    font-size: 50px;
+}
+}
+@media (min-width: 992px) {
+.featurette-heading {
+    margin-top: 120px;
+}
+}
+
+
+

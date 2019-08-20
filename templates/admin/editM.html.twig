@@ -1,0 +1,127 @@
+{% extends "admin/base.html.twig" %}
+{% block head %}{% endblock %}
+
+{% block body %}
+
+    <div class="col-lg-12">
+        <div class="panel panel-primary" style="margin-top:20px;">
+            <div class="panel-heading">
+                Edit Master
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+                {{form_start(form)}}
+
+                <div class="form-group">
+                    {{form_row(form.user)}}
+
+                    <a href="#" onclick="showModalPublication()">Ajouter Responsable ?
+                    </a>
+                </div>
+
+                <div class="form-group">
+
+                    {{form_row(form.titre)}}
+                </div>
+
+                <div class="form-group">
+                    {{form_row(form.code)}}
+                </div>
+
+                <div class="form-group">
+                    {{form_row(form.etablissement)}}
+                </div>
+
+                <div class="form-group">
+                    {{form_row(form.dateouverture)}}
+                </div>
+
+               
+
+                <div class="form-group">
+                       
+                            {{form_row(form.descripFile)}}
+                      
+
+                       
+                        
+                    </div>
+
+              
+
+            
+
+            <div class="form-group">
+                {{form_row(form.specialite)}}
+            </div>
+
+            {{form_rest(form)}}
+            <div class="panel-footer">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fa fa-save">&nbsp;Enregistrer</i>
+                </button>
+                <a href="" class="btn btn-danger">
+                    <i class="fa fa-arrow-left">&nbsp;Annuler</i>
+                </a>
+            </div>
+
+            {{form_end(form)}}
+
+        </div>
+        <!-- /.panel-body -->
+    </div>
+    <!-- /.panel -->
+
+    <div class="modal fade" id="confirm-modal-publication">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    Nouveau Responsable
+                </div>
+                <!-- /.panel-heading -->
+                <div class="panel-body">
+
+                    {{form_start(formR)}}
+                    <div class="form-group">
+                        {{form_row(formR.nom)}}
+                    </div>
+
+                    <div class="form-group">
+                        {{form_row(formR.prenom)}}
+                    </div>
+
+                    {{form_rest(formR)}}
+
+                    <div class="panel-footer">
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fa fa-save">&nbsp;Enregistrer</i>
+                        </button>
+                        <a href="" class="btn btn-danger">
+                            <i class="fa fa-arrow-left">&nbsp;Annuler</i>
+                        </a>
+                    </div>
+
+                    {{form_end(formR)}}
+
+                </div>
+            </div>
+            <!-- /.panel-body -->
+        </div>
+    </div>
+</div>
+<!-- /.col-lg-12 -->
+
+{% endblock %}
+
+{% block script %}
+<script>
+
+    function showModalPublication() {
+        $("#confirm-modal-publication").modal();
+    }
+</script>
+
+{% endblock %}

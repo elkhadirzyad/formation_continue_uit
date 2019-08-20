@@ -1,0 +1,42 @@
+<!-- Navigation -->
+
+
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+        <div class="navbar-header">
+            
+                <table width="100%" border ="1" cellspacing="1" cellpadding="1"><tr><td><div align=center><a class="navbar-brand" href="#" style="font-size: 23px;">La Plateforme de Gestion des Contrats de Formation Continue</a></div></td><tr></table>
+                
+            </div>
+            <br>
+     
+
+        <ul class="nav navbar-top-links navbar-right"  >
+         
+            
+           
+            
+           
+        
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
+                </a>
+                
+                <ul class="dropdown-menu dropdown-user">
+                    <li><a href="#"><i class="fa fa-user fa-fw"></i> {{app.user.email }}</a>
+                    </li>
+                    <li class="divider"></li>
+                    <li><a href="{{path('app_reset_password')}}"><i class="fa fa-spinner fa-spin fa fa-fw"></i> Changer Pass</a>
+                    </li>
+                    
+                    <li class="divider"></li>
+                    <li><a href="{{path('app_logout',{ 'type': "RESPONSABLE" })}}"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+               
+            </li>
+          
+        </ul>
+      
+ 

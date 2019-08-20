@@ -1,0 +1,20 @@
+{% extends './resp/base.html.twig' %}
+
+{% block title %}New CalendarMus{% endblock %}
+
+{% block body %}
+<div class="col-lg-12">
+        <div class="panel panel-primary" style="margin-top:20px;">
+            <div class="panel-heading">
+               Nouvel cours
+            </div>
+            <!-- /.panel-heading -->
+            <div class="panel-body">
+
+    {{ include('calendar_mus/_form.html.twig') }}
+
+    <a href="{{ path('calendar_mus') }}"  class="btn btn-primary">Emploi du temps</a>
+    </div>
+    </div>
+    </div>
+{% endblock %}

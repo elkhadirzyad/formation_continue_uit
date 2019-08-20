@@ -1,0 +1,91 @@
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active">
+                    <a href="{{path('home')}}">ACCUEIL</a>
+                </li>
+
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">CFC-UIT<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a href="#" class="presentation" categorie="7" titre="PRESENTATION">
+                                PRESENTATION</a>
+                        </li>
+                        <li>
+                            <a href="#" class="lienMotDoyen" categorie="7" titre="MOT DU DOYEN">
+                                MOT DU DIRECTEUR
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="corps_administratif" categorie="8" titre="CORPS ADMINISTRATIF">CORPS ADMINISTRATIF</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">FORMATIONS<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="{{path('licences')}}" class="cycle" categorie="7" titre="LICENCE UNIVERSITAIRE SPECIALISEE">
+                                LICENCE UNIVERSITAIRE SPECIALISEE (LUS)
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{path('masters')}}" class="cycle" categorie="8" titre="MASTER UNIVERSITAIRE SPECIALISEE">MASTER UNIVERSITAIRE SPECIALISE (MUS)</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">SPECIALITES<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                                {% for spts in specialites %}
+                                 <li>
+                                    <a class="domaine" style="text-transform: uppercase;" href="{{ path('specialite_lus_mus',{'id':spts.id})}}"> {{spts.titre}}</a>
+                                </li>
+                
+                                {% endfor %}
+    
+                        </ul>
+                    </li>
+
+                <li>
+                    <a href="#" class="lienContact">CONTACT</a>
+                </li>
+
+            </ul>
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+<script>
+   
+var menu = document.querySelector('.navbar')
+var menuPosition = menu.getBoundingClientRect().top;
+window.addEventListener('scroll', function() {
+    if (window.pageYOffset >= menuPosition) {
+        menu.style.position = 'fixed';
+        menu.style.top = '0px';
+    } else {
+        menu.style.position = 'static';
+        menu.style.top = '';
+    }
+});
+
+
+</script>

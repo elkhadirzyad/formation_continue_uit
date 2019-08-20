@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>CFC UIT</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link href="/css/bootstrap.min.css" rel="stylesheet">
+
+        <link href="/css/font-awesome.min.css" rel="stylesheet">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+        <link href="/css/Front/style.css" rel="stylesheet">
+        <link href="/css/Front/carousel.css" rel="stylesheet">
+        <link href="/css/Front/detailAnnonce.css" rel="stylesheet">
+
+        <link href="/css/popup-slider.css" rel="stylesheet">
+
+        <!-- srcipts javascripts-->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="http://cdn.datatables.net/1.10.2/css/jquery.dataTables.min.css"></style>
+    <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+
+    <!-- Automatically provides/replaces `Promise` if missing or broken. -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.js"></script>
+
+    <script src="/js/axios.min.js"></script>
+    <!-- for ajax -->
+
+    <script src="/js/front/extraFunctions.js"></script>
+    <script src="/js/front/main.js"></script>
+
+    <!-- for advanced table <script type="text/javascript" src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>-->
+
+</head>
+
+<body>
+    <!--
+    <header>
+        <div class="container" style=" background-image:url(/img/Front/Capture.JPG);  background-repeat: no-repeat;">
+
+            <div class="carousel slide">
+
+                <div>
+                    <img style="margin-top:90px; float:right;" src="/img/Front/CUFC.png">
+
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+-->
+
+<header>
+        <div class="container">
+            <div class="row">
+    
+               
+    
+              
+    
+    
+    
+            </div>
+        </div>
+    </header>
+
+    {% include 'nav.html.twig' %}
+
+    <div class="container" >
+        {% include 'annonces.html.twig' %}
+    </div>
+
+    <div class="container">
+
+        <div class="row" >
+            {% include 'home/index.html.twig' %}
+
+            {% include 'leftDiv.html.twig' %}
+
+          
+
+           
+
+            {% block javascripts %}{% endblock %}
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+
+    <!-- Copyright -->
+   
+    <!-- Copyright -->
+        <center>
+                <h4>copyright©2019 Centre Universitaire de Formation Continue
+                </h4>
+              
+                <br>
+            </center>
+    <!--
+<div class="container" >
+    <div class="row" >
+
+        <div class="col-md-3">
+            <h3>Faculte</h3>
+            <ul>
+                <li>
+                    <a href="#" class="lienMotDoyen">Mot du doyen</a>
+                </li>
+                <li>
+                    <a href="#">A propos</a>
+                </li>
+                <li>
+                    <a href="#">Historique</a>
+                </li>
+                <li>
+                    <a href="#">Infrastructure</a>
+                </li>
+                <li>
+                    <a href="#">Nous joindre</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>Formation</h3>
+            <ul>
+                <li>
+                    <a href="#" class="lienCategorie" categorie="7" titre="CYCLE LICENCE FONDAMENTALE">Cycle Licence Fondamentale</a>
+                </li>
+                <li>
+                    <a href="#" class="lienCategorie" categorie="8" titre="CYCLE MASTER">Cycle Master</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>Espace-etudiant</h3>
+            <ul>
+                <li>
+                    <a href="#">Profil</a>
+                </li>
+                <li>
+                    <a href="#">Tableau d'affichage</a>
+                </li>
+                <li>
+                    <a href="#">Suivi des enseignements</a>
+                </li>
+                <li>
+                    <a href="#">Réinscription</a>
+                </li>
+                <li>
+                    <a href="#">Demande de documents</a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="col-md-3">
+            <h3>divers</h3>
+            <ul>
+                <li>
+                    <a href="#">Actualités</a>
+                </li>
+                <li>
+                    <a href="#">Universités partenaires</a>
+                </li>
+                <li>
+                    <a href="#">Séminaires et Formations</a>
+                </li>
+                <li>
+                    <a href="#">Colloques</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+-->
+<!--
+<div class="copyright">
+    <div class="container">
+
+        <center>
+            <h4>COPYRIGHT©2019 CFC-UIT
+            </h4>
+        </center>
+       
+    </div>
+</div>
+-->
+
+</footer>
+
+<!-- -->
+
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+#leDetail
+{
+    margin-left: 20px;
+
+}
+
+img.defaulEvent
+{
+   width: 60%;
+}
+
+#leDetail .AfficheDetail
+{
+    width: 50% !important;
+
+}
+
+#leDetail .titreDetail
+{
+    margin-bottom: 30px;
+}
+
+
+#leDetail .AfficheDetail{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#leDetail .AfficheDetail:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#leDetail .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 900; /* Sit on top */
+    padding-top: 40px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100vh; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+
+
+/* Modal Content (Image) */
+#leDetail .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    z-index: 900;
+}
+
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#leDetail #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+#leDetail .modal-content, #caption {
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)}
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+#leDetail .close {
+    position: fixed;
+    top: 15px;
+    right: 50px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#leDetail .close:hover,
+#leDetail .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    #leDetail  .modal-content {
+        width: 100%;
+    }
+}
