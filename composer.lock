@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f52a3ac72e4af023b3a0d49359704af0",
+    "content-hash": "0a61618808d321f016d2fc3b4601f261",
     "packages": [
         {
             "name": "behat/transliterator",
@@ -1335,16 +1335,16 @@
         },
         {
             "name": "friendsofsymfony/ckeditor-bundle",
-            "version": "2.0.1",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfSymfony/FOSCKEditorBundle.git",
-                "reference": "6f05079d769b32a3f61629a0aa33f937a5374cec"
+                "reference": "7ba78735ea75b9a6d4de403d7aced6c993a0557a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/6f05079d769b32a3f61629a0aa33f937a5374cec",
-                "reference": "6f05079d769b32a3f61629a0aa33f937a5374cec",
+                "url": "https://api.github.com/repos/FriendsOfSymfony/FOSCKEditorBundle/zipball/7ba78735ea75b9a6d4de403d7aced6c993a0557a",
+                "reference": "7ba78735ea75b9a6d4de403d7aced6c993a0557a",
                 "shasum": ""
             },
             "require": {
@@ -1409,7 +1409,7 @@
             "keywords": [
                 "CKEditor"
             ],
-            "time": "2018-12-15T15:15:21+00:00"
+            "time": "2019-04-15T16:29:43+00:00"
         },
         {
             "name": "friendsofsymfony/jsrouting-bundle",
@@ -5766,7 +5766,7 @@
                 "jquery calendar",
                 "symfony calendar"
             ],
-            "abandoned": "https://github.com/tattali/CalendarBundle",
+            "abandoned": "tattali/CalendarBundle",
             "time": "2018-08-09T18:06:32+00:00"
         },
         {
