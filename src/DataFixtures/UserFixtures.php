@@ -23,16 +23,17 @@ class UserFixtures extends Fixture
  
         // on créé 10 users
         
-        for ($i = 0; $i < 2; $i++) {
+        for ($i = 0; $i < 3; $i++) {
             $user = new User();
            // $user->setNomComplet($faker->name);
             $user->setEmail(sprintf('userdemo%d@example.com', $i));
             $user->setNom(sprintf('nom', $i));
             $user->setPrenom(sprintf('prenom', $i));
             $user->setRoles(["admin"]);
+            $pass='userdemo'.$i;
             $user->setPassword($this->passwordEncoder->encodePassword(
                 $user,
-                'userdemo'
+                $pass
             ));
             $manager->persist($user);
         }
